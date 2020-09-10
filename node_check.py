@@ -1,3 +1,10 @@
+#### As an example below shell script can be used to execute this every 300s.
+####!/bin/bash
+####while true
+####do
+####        /usr/bin/sudo python3 /path/of/the/python/script.sh
+####done
+
 #!/usr/bin/python
 import sys
 import time
@@ -33,3 +40,4 @@ client.message_callback_add("nagios/node_check", on_message)
 client.loop_start()
 time.sleep(300)
 client.loop_stop()
+
